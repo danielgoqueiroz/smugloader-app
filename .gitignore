@@ -41,3 +41,12 @@ SHASUMS256.txt
 compile_commands.json
 .envrc
 build/
+#directories
+bower_components
+node_modules
+dist
+
+#files
+*.tgz
+*.log
+@klavestad
