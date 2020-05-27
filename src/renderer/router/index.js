@@ -8,7 +8,7 @@ export default new Router({
     {
       path: '/',
       name: 'Welcome',
-      component: require('@/components/Welcome').default
+      component: require('@/components/Welcome/Welcome').default
     },
     {
       path: '/albuns',

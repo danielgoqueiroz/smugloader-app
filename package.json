@@ -1,10 +1,17 @@
 {
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "name": "smugloader-app",
   "version": "0.0.1",
   "author": "Daniel Gomes Queiroz <contato@danielqueiroz.com>",
   "description": "Downloader de imagens do site smugmug.com",
   "license": null,
   "main": "./dist/electron/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:danielgoqueiroz/smugloader-app.git"
+  },
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
     "build:dir": "node .electron-vue/build.js && electron-builder --dir",
@@ -101,7 +108,7 @@
     "mini-css-extract-plugin": "0.4.0",
     "multispinner": "^0.2.1",
     "node-loader": "^0.6.0",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.14.1",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
@@ -111,7 +118,7 @@
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4",
+    "webpack-dev-server": "^3.11.0",
     "webpack-hot-middleware": "^2.22.2",
     "webpack-merge": "^4.1.3"
   }
