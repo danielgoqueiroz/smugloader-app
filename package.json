@@ -6,7 +6,7 @@
   "version": "0.0.1",
   "author": "Daniel Gomes Queiroz <contato@danielqueiroz.com>",
   "description": "Downloader de imagens do site smugmug.com",
-  "license": null,
+  "license": "Free",
   "main": "./dist/electron/main.js",
   "repository": {
     "type": "git",
@@ -22,7 +22,8 @@
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
     "postinstall": "",
-    "release": "build"
+    "release": "build",
+    "publish": "build --mac --win -p always"
   },
   "build": {
     "productName": "smugloader-app",
@@ -30,6 +31,13 @@
     "directories": {
       "output": "build"
     },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "danielgoqueiroz",
+        "repo": "smugloader-app"
+      }
+    ],
     "files": [
       "dist/electron/**/*"
     ],
