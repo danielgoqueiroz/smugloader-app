@@ -17,8 +17,9 @@ import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import "vue-sidebar-menu/dist/vue-sidebar-menu.css";
 import "font-awesome/css/font-awesome.css";
-
 import db from "./datastore";
+
+const { autoUpdater } = require("electron-updater");
 
 Vue.prototype.$db = db;
 

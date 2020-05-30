@@ -19,6 +19,9 @@ mac:
   icon: build/icons/icon.icns
 win:
   icon: build/icons/icon.ico
+  publish:
+    - github
+    - bintray
 linux:
   icon: build/icons
 electronVersion: 2.0.18
