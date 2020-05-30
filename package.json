@@ -3,7 +3,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "name": "@danielgoqueiroz/smugloader-app",
-  "version": "0.0.1",
+  "version": "0.0.1-alfa",
   "author": "Daniel Gomes Queiroz <contato@danielqueiroz.com>",
   "description": "Downloader de imagens do site smugmug.com",
   "license": "Free",
